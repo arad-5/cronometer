@@ -1,0 +1,86 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#cronometer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 2rem;
+    font-size: 3rem;
+    background-color: #fff;
+    padding: 4rem 6rem;
+    box-shadow: 0 0 20px rgb(0, 136, 255);
+    background-color: rgb(15, 15, 15);
+}
+#time {
+    padding: 2rem;
+    color: rgb(0, 136, 255);
+}
+#time::after {
+    content: "";
+}
+button {
+    height: 4rem;
+    width: 4rem;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+}
+.play,
+#reset {
+    background-color: rgb(0, 136, 255);
+    background-image: url(./media-play.svg);
+    box-shadow: 0 0 20px rgb(0, 136, 255);
+}
+#reset {
+    background-image: url(./reset.svg);
+}
+.pause {
+    background-color: rgb(255, 22, 22);
+    background-image: url(./media-pause.svg);
+    box-shadow: 0 0 20px rgb(255, 22, 22);
+}
+
+@media (max-width: 545px) {
+    #cronometer {
+        padding: 1rem;
+    }
+}
+@media (max-width: 350px) {
+    #cronometer {
+        font-size: 2.5rem;
+    }
+}
+
+#about {
+    width: 100%;
+    height: 5rem;
+    position: fixed;
+    top: 50px;
+    left: 0;
+    margin: 1rem;
+    text-align: start;
+    opacity: 0.7;
+    font-size: 1.5rem;
+}
+a {
+    color: rgb(74, 74, 255);
+}
+img {
+    height: 3rem;
+}

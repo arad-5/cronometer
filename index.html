@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>cronometer</title>
+        <link rel="stylesheet" href="style.css" />
+        <script src="index.js" defer></script>
+    </head>
+    <body>
+        <div id="about">
+            <h3>Created by 
+                <img src="./arad.svg" alt="logo">
+            </h3>
+            <a href="https://github.com/arad-5">
+                https://github.com/arad-5
+            </a><br>
+            <a href="https://codepen.io/arad-5">
+                https://codepen.io/arad-5
+            </a>
+        </div>
+        <div id="cronometer">
+            <div id="time">00:00:00:00</div>
+            <div id="controls">
+                <button id="control" class="play"></button>
+                <button id="reset" onclick="handleReset()"></button>
+            </div>
+        </div>
+    </body>
+</html>
